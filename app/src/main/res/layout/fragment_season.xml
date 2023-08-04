@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/birdsImageView"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Stop" />
+
+    <ImageView
+        android:id="@+id/seasonalImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/stopButton"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:background="#FF4500"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/cloudImageView"
+        android:layout_width="224dp"
+        android:layout_height="119dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/cloud_1" />
+
+    <ImageView
+        android:id="@+id/sunImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cloudImageView"
+        android:layout_marginTop="-33dp"
+        android:layout_marginLeft="90dp"
+        android:src="@drawable/sun3f" />
+
+    <ImageView
+        android:id="@+id/birdsImageView"
+        android:layout_width="168dp"
+        android:layout_height="111dp"
+        android:layout_below="@id/sunImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-121dp"
+        android:src="@drawable/birds_1" />
+
+    <ImageView
+        android:id="@+id/wheelImageView"
+        android:layout_width="194dp"
+        android:layout_height="142dp"
+        android:layout_below="@id/birdsImageView"
+        android:layout_marginTop="139dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wheeloftime" />
+</RelativeLayout>
